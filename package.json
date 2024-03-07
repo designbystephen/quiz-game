@@ -1,0 +1,23 @@
+{
+  "name": "amplify-quiz-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@4.1.1",
+  "workspaces": [
+    "apps/web"
+  ],
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@types/babel__core": "^7",
+    "@types/eslint": "^8",
+    "@types/jest": "^29.5.12",
+    "@types/lodash": "^4",
+    "@types/node": "^20.11.24",
+    "@types/prop-types": "^15",
+    "@types/react": "^18.2.63",
+    "@types/react-dom": "^18.2.20",
+    "prettier": "^2",
+    "typescript": "^4.0.0"
+  }
+}

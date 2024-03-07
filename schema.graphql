@@ -1,0 +1,38 @@
+type Game {
+  id: String!
+  name: String!
+  description: String!,
+  questions: [Question!]!
+}
+
+type GameSession {
+  id: String!
+  game: Game!
+  participants: [Participant!]!
+  currentQuestion: Question
+  active: Boolean!
+  paused: Boolean!
+  hostCode: String!
+
+}
+
+type Answer {
+  text: String!
+  isCorrect: Boolean!
+}
+
+type Question {
+  text: String!
+  answers: [Answer!]!
+}
+
+type Participant {
+  id: String!
+  name: String!
+}
+
+type ParticipantAnswers {
+  session: GameSession!
+  participantId: String!
+  answers: [Answer!]!
+}
